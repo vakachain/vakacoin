@@ -17,5 +17,7 @@ namespace Vakacoin.Account.Base
         bool isLocked(string address);
 
         string GetAddressFromPrivateKey(string privateKey);
+
+        string GeneratePhase();
     }
 }
