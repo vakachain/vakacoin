@@ -26,6 +26,10 @@
   "frameworks": {
     "netstandard2.0": {
       "dependencies": {
+        "LevelDB.Net": {
+          "target": "Package",
+          "version": "[1.2.1, )"
+        },
         "NETStandard.Library": {
           "suppressParent": "All",
           "target": "Package",

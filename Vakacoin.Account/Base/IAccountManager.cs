@@ -1,3 +1,5 @@
+using Vakacoin.Cryptography;
+
 namespace Vakacoin.Account.Base
 {
     
@@ -9,7 +11,11 @@ namespace Vakacoin.Account.Base
         /// <param name="password"></param>
         /// <returns></returns>
         string CreateNewAccount(string password);
-
+        
+        bool WriteAccount(ECKeyPair key, string password);
+        
+        
+        
         string UnlockAccount(string password);
 
         string LockAccount(string address);

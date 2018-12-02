@@ -8,7 +8,9 @@ namespace Vakacoin.Account
     public class Address
     {
         public ByteString Value;
+
         public const int AddressLength = 18;
+
         //Todo change address length
         public Address(byte[] bytes)
         {
@@ -19,13 +21,7 @@ namespace Vakacoin.Account
             }
 
             var toTruncate = bytes.Length - AddressLength;
-
-
-
             Value = ByteString.CopyFrom(bytes.Skip(toTruncate).ToArray());
-
-
-
         }
 
         public String ToHex()

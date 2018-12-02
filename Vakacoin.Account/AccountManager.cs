@@ -14,6 +14,12 @@ namespace Vakacoin.Account
 
         }
 
+        public bool WriteAccount(ECKeyPair key, string password)
+        {
+            throw new System.NotImplementedException();
+        }
+
+
         public string UnlockAccount(string password)
         {
             throw new System.NotImplementedException();
