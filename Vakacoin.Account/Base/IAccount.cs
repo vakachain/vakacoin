@@ -1,7 +1,7 @@
 namespace Vakacoin.Account.Base
 {
     
-    interface IAccount
+    interface IAccountManager
     {
         /// <summary>
         /// This function will create new account with password

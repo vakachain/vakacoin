@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/home/tony/Data1TB/Code/VakaxaGroup/Vakachain/Vakacoin/Vakacoin.Core/Vakacoin.Core.csproj",
+    "projectUniqueName": "/home/tony/Code/Dotnet/Vakachain/vakacoin/Vakacoin.Core/Vakacoin.Core.csproj",
     "projectName": "Vakacoin.Core",
-    "projectPath": "/home/tony/Data1TB/Code/VakaxaGroup/Vakachain/Vakacoin/Vakacoin.Core/Vakacoin.Core.csproj",
-    "outputPath": "/home/tony/Data1TB/Code/VakaxaGroup/Vakachain/Vakacoin/Vakacoin.Core/obj/",
+    "projectPath": "/home/tony/Code/Dotnet/Vakachain/vakacoin/Vakacoin.Core/Vakacoin.Core.csproj",
+    "outputPath": "/home/tony/Code/Dotnet/Vakachain/vakacoin/Vakacoin.Core/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "/usr/share/dotnet/sdk/NuGetFallbackFolder"

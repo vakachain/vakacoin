@@ -22,6 +22,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vakacoin.JsonRpc", "Vakacoi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vakacoin.Laucher", "Vakacoin.Laucher\Vakacoin.Laucher.csproj", "{EF718049-BD2A-4E4B-B43E-0B76A46601C9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestProject", "TestProject", "{6053FD95-A582-42E0-AD7F-F8B9DCF30804}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vakacoin.Test.Account", "Vakacoin.Test.Account\Vakacoin.Test.Account.csproj", "{A2B070EE-A0F7-4910-A9C5-ED417CEA783A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,5 +76,12 @@ Global
 		{EF718049-BD2A-4E4B-B43E-0B76A46601C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF718049-BD2A-4E4B-B43E-0B76A46601C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF718049-BD2A-4E4B-B43E-0B76A46601C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2B070EE-A0F7-4910-A9C5-ED417CEA783A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2B070EE-A0F7-4910-A9C5-ED417CEA783A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2B070EE-A0F7-4910-A9C5-ED417CEA783A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2B070EE-A0F7-4910-A9C5-ED417CEA783A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A2B070EE-A0F7-4910-A9C5-ED417CEA783A} = {6053FD95-A582-42E0-AD7F-F8B9DCF30804}
 	EndGlobalSection
 EndGlobal

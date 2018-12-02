@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="/7bde333b" t="IncludeRecursive" />
-    <e p="/app" t="IncludeRecursive" />
     <e p="$USER_HOME$/.Rider2018.2/system/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/.Rider2018.2/system/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_Vakacoin.1222448698.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/.Rider2018.2/system/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_Vakacoin.-1803585351.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="TestProject" t="Include" />
       <e p="Vakacoin.Account" t="IncludeRecursive">
+        <e p="AccountManager.cs" t="Include" />
+        <e p="Address.cs" t="Include" />
         <e p="Base" t="Include">
           <e p="IAccount.cs" t="Include" />
         </e>
@@ -47,6 +48,9 @@
       </e>
       <e p="Vakacoin.Core" t="IncludeRecursive">
         <e p="Class1.cs" t="Include" />
+        <e p="Helper" t="Include">
+          <e p="ByteArrayHelper.cs" t="Include" />
+        </e>
         <e p="Vakacoin.Core.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
@@ -59,6 +63,12 @@
       </e>
       <e p="Vakacoin.Cryptography" t="IncludeRecursive">
         <e p="Class1.cs" t="Include" />
+        <e p="ECKeyPair.cs" t="Include" />
+        <e p="ECKeyPairGenerate.cs" t="Include" />
+        <e p="ECParameters.cs" t="Include" />
+        <e p="ECSignature.cs" t="Include" />
+        <e p="ECSigner.cs" t="Include" />
+        <e p="ECVerify.cs" t="Include" />
         <e p="Vakacoin.Cryptography.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
@@ -137,6 +147,18 @@
           <e p="Debug" t="Include">
             <e p="netstandard2.0" t="Include">
               <e p="Vakacoin.Protocol.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="Vakacoin.Test.Account" t="IncludeRecursive">
+        <e p="Program.cs" t="Include" />
+        <e p="Vakacoin.Test.Account.csproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="Vakacoin.Test.Account.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
