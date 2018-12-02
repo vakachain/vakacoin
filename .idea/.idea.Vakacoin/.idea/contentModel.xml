@@ -7,6 +7,9 @@
     <e p="$USER_HOME$/.Rider2018.2/system/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_Vakacoin.1222448698.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="Vakacoin.Account" t="IncludeRecursive">
+        <e p="Base" t="Include">
+          <e p="IAccount.cs" t="Include" />
+        </e>
         <e p="Class1.cs" t="Include" />
         <e p="Vakacoin.Account.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
