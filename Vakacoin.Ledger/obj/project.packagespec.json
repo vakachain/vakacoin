@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/home/tony/Code/Dotnet/Vakachain/vakacoin/Vakacoin.Ledger/Vakacoin.Ledger.csproj",
+    "projectUniqueName": "/home/tony/Data1TB/Code/VakaxaGroup/Vakachain/Vakacoin/Vakacoin.Ledger/Vakacoin.Ledger.csproj",
     "projectName": "Vakacoin.Ledger",
-    "projectPath": "/home/tony/Code/Dotnet/Vakachain/vakacoin/Vakacoin.Ledger/Vakacoin.Ledger.csproj",
-    "outputPath": "/home/tony/Code/Dotnet/Vakachain/vakacoin/Vakacoin.Ledger/obj/",
+    "projectPath": "/home/tony/Data1TB/Code/VakaxaGroup/Vakachain/Vakacoin/Vakacoin.Ledger/Vakacoin.Ledger.csproj",
+    "outputPath": "/home/tony/Data1TB/Code/VakaxaGroup/Vakachain/Vakacoin/Vakacoin.Ledger/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "/usr/share/dotnet/sdk/NuGetFallbackFolder"
