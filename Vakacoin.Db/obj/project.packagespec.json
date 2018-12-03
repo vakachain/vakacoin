@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/home/tony/Data1TB/Code/VakaxaGroup/Vakachain/Vakacoin/Vakacoin.Db/Vakacoin.Db.csproj",
+    "projectUniqueName": "/home/tony/Code/Dotnet/Vakachain/vakacoin/Vakacoin.Db/Vakacoin.Db.csproj",
     "projectName": "Vakacoin.Db",
-    "projectPath": "/home/tony/Data1TB/Code/VakaxaGroup/Vakachain/Vakacoin/Vakacoin.Db/Vakacoin.Db.csproj",
-    "outputPath": "/home/tony/Data1TB/Code/VakaxaGroup/Vakachain/Vakacoin/Vakacoin.Db/obj/",
+    "projectPath": "/home/tony/Code/Dotnet/Vakachain/vakacoin/Vakacoin.Db/Vakacoin.Db.csproj",
+    "outputPath": "/home/tony/Code/Dotnet/Vakachain/vakacoin/Vakacoin.Db/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "/usr/share/dotnet/sdk/NuGetFallbackFolder"
@@ -26,6 +26,10 @@
   "frameworks": {
     "netstandard2.0": {
       "dependencies": {
+        "LevelDB.Net": {
+          "target": "Package",
+          "version": "[1.2.1, )"
+        },
         "NETStandard.Library": {
           "suppressParent": "All",
           "target": "Package",

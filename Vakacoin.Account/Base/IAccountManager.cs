@@ -1,7 +1,9 @@
+using Vakacoin.Cryptography;
+
 namespace Vakacoin.Account.Base
 {
     
-    interface IAccount
+    interface IAccountManager
     {
         /// <summary>
         /// This function will create new account with password
@@ -9,7 +11,11 @@ namespace Vakacoin.Account.Base
         /// <param name="password"></param>
         /// <returns></returns>
         string CreateNewAccount(string password);
-
+        
+        bool WriteAccount(ECKeyPair key, string password);
+        
+        
+        
         string UnlockAccount(string password);
 
         string LockAccount(string address);

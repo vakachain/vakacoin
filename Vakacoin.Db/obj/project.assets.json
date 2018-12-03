@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "LevelDB.Net/1.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40/LevelDB.Net.dll": {}
+        },
+        "runtime": {
+          "lib/net40/LevelDB.Net.dll": {}
+        }
+      },
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -29,11 +38,24 @@
     }
   },
   "libraries": {
+    "LevelDB.Net/1.2.1": {
+      "sha512": "5S+ZCJ/kjFZdNytm1DyplP2V7mN24X7+fgoZOr6sdIU4i3TqUIAnf2JLAbFyuxbuSriznfu0qRgnbGuxXfVbDQ==",
+      "type": "package",
+      "path": "leveldb.net/1.2.1",
+      "files": [
+        ".signature.p7s",
+        "leveldb.net.1.2.1.nupkg.sha512",
+        "leveldb.net.nuspec",
+        "lib/net40/LevelDB.Net.dll"
+      ]
+    },
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "sha512": "bLpT1f/SFlO1CzqXG12KnJzpZs6lv24uX2Rzi4Fmm0noJpNlnWRVryuO3yK18Ca04t/YHcO1e1Z0WDfjseqNzw==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -172,6 +194,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "LevelDB.Net >= 1.2.1",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -182,11 +205,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/tony/Data1TB/Code/VakaxaGroup/Vakachain/Vakacoin/Vakacoin.Db/Vakacoin.Db.csproj",
+      "projectUniqueName": "/home/tony/Code/Dotnet/Vakachain/vakacoin/Vakacoin.Db/Vakacoin.Db.csproj",
       "projectName": "Vakacoin.Db",
-      "projectPath": "/home/tony/Data1TB/Code/VakaxaGroup/Vakachain/Vakacoin/Vakacoin.Db/Vakacoin.Db.csproj",
+      "projectPath": "/home/tony/Code/Dotnet/Vakachain/vakacoin/Vakacoin.Db/Vakacoin.Db.csproj",
       "packagesPath": "/home/tony/.nuget/packages/",
-      "outputPath": "/home/tony/Data1TB/Code/VakaxaGroup/Vakachain/Vakacoin/Vakacoin.Db/obj/",
+      "outputPath": "/home/tony/Code/Dotnet/Vakachain/vakacoin/Vakacoin.Db/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"
@@ -214,6 +237,10 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
+          "LevelDB.Net": {
+            "target": "Package",
+            "version": "[1.2.1, )"
+          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
@@ -228,5 +255,17 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'LevelDB.Net 1.2.1' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "LevelDB.Net",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
 }

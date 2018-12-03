@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/home/tony/Data1TB/Code/VakaxaGroup/Vakachain/Vakacoin/Vakacoin.Account/Vakacoin.Account.csproj",
+    "projectUniqueName": "/home/tony/Code/Dotnet/Vakachain/vakacoin/Vakacoin.Account/Vakacoin.Account.csproj",
     "projectName": "Vakacoin.Account",
-    "projectPath": "/home/tony/Data1TB/Code/VakaxaGroup/Vakachain/Vakacoin/Vakacoin.Account/Vakacoin.Account.csproj",
-    "outputPath": "/home/tony/Data1TB/Code/VakaxaGroup/Vakachain/Vakacoin/Vakacoin.Account/obj/",
+    "projectPath": "/home/tony/Code/Dotnet/Vakachain/vakacoin/Vakacoin.Account/Vakacoin.Account.csproj",
+    "outputPath": "/home/tony/Code/Dotnet/Vakachain/vakacoin/Vakacoin.Account/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "/usr/share/dotnet/sdk/NuGetFallbackFolder"
@@ -14,7 +14,14 @@
     ],
     "frameworks": {
       "netcoreapp2.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "/home/tony/Code/Dotnet/Vakachain/vakacoin/Vakacoin.Core/Vakacoin.Core.csproj": {
+            "projectPath": "/home/tony/Code/Dotnet/Vakachain/vakacoin/Vakacoin.Core/Vakacoin.Core.csproj"
+          },
+          "/home/tony/Code/Dotnet/Vakachain/vakacoin/Vakacoin.Cryptography/Vakacoin.Cryptography.csproj": {
+            "projectPath": "/home/tony/Code/Dotnet/Vakachain/vakacoin/Vakacoin.Cryptography/Vakacoin.Cryptography.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
@@ -26,6 +33,10 @@
   "frameworks": {
     "netcoreapp2.1": {
       "dependencies": {
+        "Google.Protobuf": {
+          "target": "Package",
+          "version": "[3.6.1, )"
+        },
         "Microsoft.NETCore.App": {
           "suppressParent": "All",
           "target": "Package",

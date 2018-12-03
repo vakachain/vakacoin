@@ -4,4 +4,13 @@
         <TargetFramework>netcoreapp2.1</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Vakacoin.Core\Vakacoin.Core.csproj" />
+      <ProjectReference Include="..\Vakacoin.Cryptography\Vakacoin.Cryptography.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Google.Protobuf" Version="3.6.1" />
+    </ItemGroup>
+
 </Project>
