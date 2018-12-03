@@ -1,6 +1,7 @@
 *bin*
 *obj*
 *packages*
+.idea
 obj
 /.vs
 # User-specific files
