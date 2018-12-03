@@ -7,10 +7,10 @@ namespace Vakacoin.Account
     {
         public string CreateNewAccount(string password)
         {
-            var createaAccount = new ECKeyPairGenerate();
-            var Keypair = createaAccount.generate();
-            var Address = new Address(Keypair.GetEncodedPublicKey());
-            return Address.ToHex();
+            var createAccount = new ECKeyPairGenerate();
+            var keypair = createAccount.generate();
+            var address = new Address(keypair.GetEncodedPublicKey());
+            return address.ToHex();
 
         }
 
