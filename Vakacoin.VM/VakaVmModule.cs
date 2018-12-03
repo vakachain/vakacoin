@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Vakacoin.Leger
+namespace Vakacoin.VM
 {
     public class Class1
     {
