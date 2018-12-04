@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Vakacoin.Core
+namespace Vakacoin.IO
 {
     public class Class1
     {
