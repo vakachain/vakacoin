@@ -30,6 +30,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vakacoin.WS", "Vakacoin.WS\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vakacoin.VM", "Vakacoin.VM\Vakacoin.VM.csproj", "{2A7FE089-CF74-4F41-B7BC-F3073D97E5B7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vakacoin.CrossChain", "Vakacoin.CrossChain\Vakacoin.CrossChain.csproj", "{BD3C4F74-2C81-4647-A467-7462BFCD31C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -92,6 +94,10 @@ Global
 		{2A7FE089-CF74-4F41-B7BC-F3073D97E5B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A7FE089-CF74-4F41-B7BC-F3073D97E5B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A7FE089-CF74-4F41-B7BC-F3073D97E5B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD3C4F74-2C81-4647-A467-7462BFCD31C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD3C4F74-2C81-4647-A467-7462BFCD31C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD3C4F74-2C81-4647-A467-7462BFCD31C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD3C4F74-2C81-4647-A467-7462BFCD31C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A2B070EE-A0F7-4910-A9C5-ED417CEA783A} = {6053FD95-A582-42E0-AD7F-F8B9DCF30804}
