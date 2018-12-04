@@ -5,8 +5,12 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <Folder Include="Cache" />
       <Folder Include="Files" />
-      <Folder Include="Redis" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MongoDB.Driver" Version="2.7.2" />
     </ItemGroup>
 
 </Project>
