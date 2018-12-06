@@ -11,6 +11,7 @@
     <ItemGroup>
       <Folder Include="Config" />
       <Folder Include="Params" />
+      <Folder Include="Params\" />
     </ItemGroup>
 
 </Project>

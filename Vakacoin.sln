@@ -1,5 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vakacoin.Account", "Vakacoin.Account\Vakacoin.Account.csproj", "{984C6F8F-5665-4A80-A9D4-2B5D28C8636B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vakacoin.Db", "Vakacoin.Db\Vakacoin.Db.csproj", "{15C21EE4-F214-4E8E-9465-0D7EAFECF467}"
@@ -31,6 +32,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vakacoin.VM", "Vakacoin.VM\Vakacoin.VM.csproj", "{2A7FE089-CF74-4F41-B7BC-F3073D97E5B7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vakacoin.CrossChain", "Vakacoin.CrossChain\Vakacoin.CrossChain.csproj", "{BD3C4F74-2C81-4647-A467-7462BFCD31C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vakacoin.Test.Debug", "Vakacoin.Test.Debug\Vakacoin.Test.Debug.csproj", "{08898711-D201-4174-831A-9D4BBDB1BFB4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -98,8 +101,19 @@ Global
 		{BD3C4F74-2C81-4647-A467-7462BFCD31C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD3C4F74-2C81-4647-A467-7462BFCD31C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD3C4F74-2C81-4647-A467-7462BFCD31C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08898711-D201-4174-831A-9D4BBDB1BFB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08898711-D201-4174-831A-9D4BBDB1BFB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08898711-D201-4174-831A-9D4BBDB1BFB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08898711-D201-4174-831A-9D4BBDB1BFB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A2B070EE-A0F7-4910-A9C5-ED417CEA783A} = {6053FD95-A582-42E0-AD7F-F8B9DCF30804}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.StandardHeader = $1
+		$1.Text = @${AuthorName}\n${AuthorEmail}\n${Time}
+		$0.DotNetNamingPolicy = $2
+		$2.DirectoryNamespaceAssociation = PrefixedHierarchical
 	EndGlobalSection
 EndGlobal

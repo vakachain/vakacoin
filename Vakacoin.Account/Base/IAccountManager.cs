@@ -12,7 +12,7 @@ namespace Vakacoin.Account.Base
         /// <returns></returns>
         string CreateNewAccount(string password);
         
-        bool WriteAccount(ECKeyPair key, string password);
+        bool WriteAccount(ECKeyPair key, string password, string fullPath);
         
         
         

@@ -1,9 +1,12 @@
+using System;
+using System.Linq;
 using Org.BouncyCastle.Crypto.Parameters;
 
 namespace Vakacoin.Cryptography
 {
     public class ECKeyPair
     {
+        public static int AddressLength { get; } = 18;
         public ECPrivateKeyParameters PrivateKey { get; private set; }
         public ECPublicKeyParameters PublicKey { get; private set; }
 
@@ -26,6 +29,14 @@ namespace Vakacoin.Cryptography
             ECKeyPair k = new ECKeyPair(null, pubKey);
 
             return k;
+        }
+        public byte[] GetAddress()
+        {
+            return GetEncodedPublicKey().Take(AddressLength).ToArray();
+        }
+        public string GetAddressHex()
+        {
+            return "0x" + BitConverter.ToString(GetAddress()).Replace("-", string.Empty).ToLower();
         }
     }
 }
