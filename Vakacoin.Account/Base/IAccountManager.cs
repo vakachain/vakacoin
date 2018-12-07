@@ -1,3 +1,4 @@
+using System.Globalization;
 using Vakacoin.Cryptography;
 
 namespace Vakacoin.Account.Base
@@ -12,9 +13,11 @@ namespace Vakacoin.Account.Base
         /// <returns></returns>
         string CreateNewAccount(string password);
         
+        
+        
         bool WriteAccount(ECKeyPair key, string password, string fullPath);
-        
-        
+
+        ECKeyPair ReadyAccountFile(string address, string password);
         
         string UnlockAccount(string password);
 
@@ -29,5 +32,9 @@ namespace Vakacoin.Account.Base
         /// </summary>
         /// <returns></returns>
         string GeneratePhase();
+
+        string GetKeysFolder();
+
+        string GetAddressPath(string address);
     }
 }

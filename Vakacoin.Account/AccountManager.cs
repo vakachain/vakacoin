@@ -1,10 +1,13 @@
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using Org.BouncyCastle.Crypto;
+using Org.BouncyCastle.Crypto.Parameters;
 using Org.BouncyCastle.OpenSsl;
 using Org.BouncyCastle.Security;
 using Vakacoin.Account.Base;
+using Vakacoin.Account.Models;
 using Vakacoin.Cryptography;
 
 namespace Vakacoin.Account
@@ -16,6 +19,7 @@ namespace Vakacoin.Account
         private static readonly SecureRandom RandomSec = new SecureRandom();
         private static readonly string Alg = "AES-256-CFB";
         
+        private List<UnlockAccount> _unlockAccounts = new List<UnlockAccount>();
         
         /// <summary>
         /// Create new account with password and save it in to folder key
@@ -97,7 +101,38 @@ namespace Vakacoin.Account
             return true;
         }
 
+        public ECKeyPair ReadyAccountFile(string address, string password)
+        {
+            try
+            {
+                string keyFilePath = GetAddressPath(address);
+                if(!File.Exists(keyFilePath))
+                    throw new Exception("Address not exist.");
+                AsymmetricCipherKeyPair p;
+                using (var textReader = File.OpenText(keyFilePath))
+                {
+                    PemReader pr = new PemReader(textReader, new Password(password.ToCharArray()));
+                    p = pr.ReadObject() as AsymmetricCipherKeyPair;
+                }
 
+                if (p == null)
+                    return null;
+                
+                ECKeyPair kp = new ECKeyPair((ECPrivateKeyParameters) p.Private, (ECPublicKeyParameters) p.Public);
+
+                return kp;
+            }
+            
+            catch (Exception e)
+            {
+                throw e;
+            }
+
+            //return null;
+        }
+
+        
+        
         public string UnlockAccount(string password)
         {
             throw new System.NotImplementedException();
@@ -121,6 +156,38 @@ namespace Vakacoin.Account
         public string GeneratePhase()
         {
             throw new System.NotImplementedException();
+        }
+
+        public string GetKeysFolder()
+        {
+            try
+            {
+                var path = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+                path = Path.Combine(path, FolderKey);
+                Directory.CreateDirectory(path);
+                return path;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
+        
+
+        public string GetAddressPath(string address)
+        {
+            try
+            {
+                var path = GetKeysFolder();
+                
+                path = Path.Combine(path, address + FileName);
+                return path;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
     }
 }

@@ -2,8 +2,6 @@ using System.Threading.Tasks;
 
 namespace Vakacoin.Db
 {
-    
-
     public interface IDbStore
     {
         Task<bool> AddAsync();
